@@ -1,0 +1,8 @@
+.action_icons a{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.action_icons a:hover{
+    background-color: #e2e2e2;
+}

@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #EDEDF5;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn{
+    padding: 10px;
+}
+.bx{
+    font-size: 20px;
+    transition: .3s linear;
+}
+.btn-theme {
+    background-color: #1640D6;
+    color: #ffff;
+}
+
+.btn-theme:hover {
+    background-color: #001B79;
+    color: #ffff;
+}
+
+.active{
+    color: #1640D6 !important;
+}
+.card{
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2)  !important;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+    color: #1640D6;
+}
+.swal2-confirm{
+    background: #1640D6 !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* --------------header menu------------------ */
+.header_menu{
+    background-color: #ffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header_menu h3{
+    font-size: 22px;
+}
+.header_menu a i{
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.header_menu a:hover i {
+    color: #1640D6;
+}
+
+/*---------------bottom menu--------------- */
+.bottom_menu {
+    background-color: #ffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.bottom_menu a:hover i {
+    color: #1640D6;
+}
+.bottom_menu a:hover p{
+    color: #1640D6;
+}
+.bottom_menu .scan_tab{
+    width: 60px;
+    height: 60px;
+    display: block;
+    background: #EDEDF5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    border-radius: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s linear;
+}
+.bottom_menu .scan_tab:hover .inside{
+    /* font-size: 25px !important; */
+    width: 55px;
+    height: 55px;
+}
+.bottom_menu .scan_tab .inside{
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s linear;
+    animation: glow 5s infinite;
+}
+@keyframes glow {
+    0%{
+        box-shadow: 0 0 -10px #1640D6;
+    }
+    40% {
+        box-shadow: 0 0 10px #1640D6;
+    }
+    60% {
+        box-shadow: 0 0 15px #1640D6;
+    }
+    80% {
+        box-shadow: 0 0 10px #1640D6;
+    }
+    100% {
+        box-shadow: 0 0 -10px #1640D6;
+    }
+}
+/* ----------------Auth Form--------------------- */
+.theme-link{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+.theme-link:hover{
+    color: #1640D6;
+    text-decoration: underline;
+}
+.content{
+    margin-top: 50px;
+    margin-bottom: 55px;
+}
+
+
+/* ------------profile-------------- */
+.profile_img{
+    text-align: center;
+}
+.profile_img img{
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #ddd;
+    background: #ffff;
+    padding: 5px;
+}
+
+/* ---------------------------update_password-------------------- */
+
+.update_password img{
+    width: 200px;
+}
+
+
+/* ----------------------------Wallet---------------------------------- */
+.wallet_card{
+    /* background: #1640D6; */
+    background:linear-gradient(to bottom right, #1640D6, #7996ff) ;
+    color: #fff;
+}
+.wallet_card span{
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.wallet_card h4{
+    font-size: 20px;
+}
+
+/* -----------------home------------------- */
+.shortcut_box i{
+    font-size: 30px;
+}
+.shortcut_box span{
+    font-size: 16px;
+    font-weight: 900;
+}
+.shortcut_box .card-body{
+    display: flex;
+    align-items: center;
+}
+.function_box img{
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+}
+.check_verify_btn{
+    cursor: pointer;
+}
+/* ---------------transaction------------------- */
+
+.transaction_datail img{
+    width: 80px;
+}
