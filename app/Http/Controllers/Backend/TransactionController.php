@@ -15,7 +15,7 @@ class TransactionController extends Controller
     }
     public function ssd()
     {
-        $transaction = Transaction::with('user', 'sourceUser')->where('type', 1);
+        $transaction = Transaction::with('user', 'sourceUser')->where('type', 2);
         return DataTables::of($transaction)
             ->addColumn('transfer_name', function ($each) {
                 return $each->user->name;
