@@ -39,8 +39,12 @@
                                 {{ __('Remember Me') }}
                             </label>
 
+
                             <button class="btn btn-theme form-control my-2">Login</button>
 
+                            <div class="mt-2">
+                                <a href="{{ route('register') }}">Don't have account?</a>
+                            </div>
                         </form>
                     </div>
                 </div>
