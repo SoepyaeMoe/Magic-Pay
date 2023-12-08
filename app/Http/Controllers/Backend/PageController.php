@@ -11,9 +11,9 @@ class PageController extends Controller
 {
     public function home()
     {
-        $users = User::all();
-        $admin_users = AdminUser::all();
-        $transactions = Transaction::all();
+        $users = User::get();
+        $admin_users = AdminUser::get();
+        $transactions = Transaction::where('type', 2)->get();
 
         $total_amount = 0;
         $total_transaction_amount = 0;
