@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Backend\AdminUserController;
 use App\Http\Controllers\Backend\PageController;
+use App\Http\Controllers\Backend\TransactionController;
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\WalletController;
 use Illuminate\Support\Facades\Route;
@@ -32,7 +33,11 @@ Route::middleware('auth:admin_user')->name('admin.')->prefix('admin')->group(fun
     Route::post('/user/update/{id}', [UserController::class, 'update'])->name('user.update');
     Route::DELETE('/user/delete/{id}', [UserController::class, 'delete'])->name('user.delete');
 
-    // walle
+    // wallet
     Route::get('/wallet/datatable/ssd', [WalletController::class, 'ssd']);
     Route::get('/wallet', [WalletController::class, 'index'])->name('wallet.index');
+
+    // transaction
+    Route::get('/transaction', [TransactionController::class, 'index'])->name('transaction.index');
+    Route::get('/transaction/datatable/ssd', [TransactionController::class, 'ssd']);
 });

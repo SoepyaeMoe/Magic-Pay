@@ -1,5 +1,5 @@
 @extends('backend.layouts.app')
-@section('title', 'User Management')
+@section('title', 'Wallet')
 @section('wallet-active', 'active')
 
 @section('content')

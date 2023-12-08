@@ -69,6 +69,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item menu-open">
+                    <a href="{{ route('admin.transaction.index') }}" class="nav-link @yield('transaction-active')">
+                        <i class="nav-icon fas fa-exchange-alt"></i>
+                        <p>
+                            Transaction
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
